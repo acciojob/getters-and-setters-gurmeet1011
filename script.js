@@ -1,22 +1,22 @@
 class Person {
   constructor(name, age) {
-    this.name = name; // Set name directly in the constructor
-    this.age = age;   // Set age directly in the constructor
+    this._name = name; // Use private variable _name
+    this._age = age;   // Use private variable _age
   }
 
   // Getter for name
   getName() {
-    return this.name;
+    return this._name;
   }
 
   // Setter for age
-  setAge(s) {
-    this.age = s;
+  setAge(age) {
+    this._age = age;
   }
 
   // Getter for age
   getAge() {
-    return this.age;
+    return this._age;
   }
 }
 
