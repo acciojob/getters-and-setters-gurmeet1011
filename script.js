@@ -1,22 +1,22 @@
 class Person {
   constructor(name, age) {
-    this.name = name;
-    this._age = age; // Use _age to avoid conflict with the setter method
-  }
-
-  // Setter for age
-  set age(s) {
-    this._age = s;
-  }
-
-  // Getter for age
-  get age() {
-    return this._age;
+    this.name = name; // Set name directly in the constructor
+    this.age = age;   // Set age directly in the constructor
   }
 
   // Getter for name
-  get name() {
-    return this._name;
+  getName() {
+    return this.name;
+  }
+
+  // Setter for age
+  setAge(s) {
+    this.age = s;
+  }
+
+  // Getter for age
+  getAge() {
+    return this.age;
   }
 }
 
